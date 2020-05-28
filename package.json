@@ -4,13 +4,15 @@
   "description": "tools made by hnzhou",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --max-warnings=0 \"src/**/*.ts\"",
+    "lint:fix": "eslint --fix --max-warnings=0 \"src/**/*.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "tools"
   ],
   "author": "hnzhou",
-  "license": "MIT",
+  "license": "",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
@@ -31,7 +33,9 @@
     "vconsole": "^3.3.4",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.7.0"
   },
   "husky": {
     "hooks": {

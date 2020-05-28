@@ -1,2 +1,3 @@
-import {test} from '../index';
-test()
+import { test } from '../index';
+
+test();
