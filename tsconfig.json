@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "lib": ["esnext", "dom"],
+    "rootDir": ".",
+    "declaration": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "example/public/**/*"
+  ],
+  "typedocOptions": {
+    "mode": "file",
+    "name": "VrTools",
+    "out": "./docs",
+    "exclude": "example/*.ts",
+    "excludePrivate": true,
+    "hideGenerator": true,
+    "plugin": ["typedoc-plugin-no-inherit"],
+    "readme": "./README.external.md"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [ "typescript" ],
+  "eslint.options": {
+    "extensions": [".ts"]
+  },
+  "eslint.alwaysShowStatus": true,
+  "gitlens.codeLens.scopes": [
+    "document",
+    "containers",
+    "blocks"
+  ],
+  "todo-tree.tree.showInExplorer": false,
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.tree.flat": true,
+  "cSpell.words": [
+    "owlly"
+  ]
+}
