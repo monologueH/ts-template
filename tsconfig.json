@@ -17,7 +17,8 @@
     "declaration": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "*.js"
   ],
   "exclude": [
     "example/public/**/*"

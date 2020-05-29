@@ -26,12 +26,12 @@ if (env === 'development') {
       format: 'iife',
       file: 'public/js/baseTools.js',
       name: 'baseTools',
-      sourcemap: true
+      sourcemap: true,
     },
   });
 } else if (env === 'production') {
-  const formats = process.env.X_FORMAT && process.env.X_FORMAT.length ?
-    process.env.X_FORMAT.split(' ') : ['cjs', 'iife', 'esm'];
+  const formats = process.env.X_FORMAT && process.env.X_FORMAT.length
+    ? process.env.X_FORMAT.split(' ') : ['cjs', 'iife', 'esm'];
   settings.push(...formats.map((format) => ({
     input: 'src/index.ts',
     output: {
@@ -58,7 +58,7 @@ settings.forEach((s) => {
         ) return;
         console.warn(warning.message);
       }
-    }
+    },
   });
 });
 
@@ -126,7 +126,7 @@ function generatePlugins(environment, format) {
       livereload({
         watch: ['public'],
       }),
-      json()
+      json(),
     );
   }
 

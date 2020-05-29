@@ -14,7 +14,7 @@ module.exports = {
     useJSXTextNode: true,
     project: './tsconfig.json',
     tsconfigRootDir: './',
-    extraFileExtensions: ['.vue']
+    extraFileExtensions: ['.vue','.js']
   },
   rules: {
     'no-console':"off",
@@ -43,7 +43,7 @@ module.exports = {
     'import/prefer-default-export': 0,
     'import/extensions': 0,
     'import/no-extraneous-dependencies': [
-      'error', { devDependencies: ['./src/web/**/*.ts', './src/**/__test__/**/*.ts']},
+      'error', { devDependencies: true},
     ],
     '@typescript-eslint/no-empty-function': ['error', { allow: ['arrowFunctions'] }],
     '@typescript-eslint/no-non-null-assertion': 0,
