@@ -1,4 +1,3 @@
-
 export interface ConfigurableOptions {
   maxNum?: number; // 数据累计多少条上报一次
   time?: number; // 多久上报一次，这里是5000ms
