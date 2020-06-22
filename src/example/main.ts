@@ -1,3 +1,4 @@
-import { test } from '../index';
+import { Shovel } from '../index';
 
-test();
+const shovel = new Shovel();
+shovel.init();

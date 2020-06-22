@@ -25,7 +25,7 @@
   ],
   "typedocOptions": {
     "mode": "file",
-    "name": "VrTools",
+    "name": "base-tools",
     "out": "./docs",
     "exclude": "example/*.ts",
     "excludePrivate": true,

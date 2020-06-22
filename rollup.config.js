@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 // Build
 const path = require('path');
 const resolve = require('@rollup/plugin-node-resolve');
@@ -115,7 +116,7 @@ function generatePlugins(environment, format) {
         dest: 'public',
         filename: 'index.html',
         inject: 'footer',
-        ignore: '/main\.js/',
+        ignore: '/main.js/',
       }),
       serve({
         open: false,
